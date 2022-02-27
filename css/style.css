@@ -1,22 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,800;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: Open+Sans,sans-serif;
 }
 
-.login{
+#login{
     background-color: black;
     
 }
-.sublogin{
+.login{
     color: white;
     text-align: right;
 }
-
+.teste{
+    margin-right: 100px;
+}
 .main-container{
     width: 100%;
     
 }
 
-.head{
-    background-color: red;
+#head{
+    background-color: #CB0D1F;
+    height: 54px;
+}
+#head ul{
+    padding:15px 290px;
+	margin:0px;
+	list-style:none;
+}
+#head ul li{
+    display: inline;
+    text-align: center;
+}
+#head ul li a{
+    padding: 2px 90px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+#head ul li a:hover{
+    color: #fffb;
+    text-decoration:underline;
 }

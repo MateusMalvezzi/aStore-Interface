@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login{
+    background-color: black;
+    
+}
+.sublogin{
+    color: white;
+    text-align: right;
+}
+
+.main-container{
+    width: 100%;
+    
+}
+
+.head{
+    background-color: red;
+}

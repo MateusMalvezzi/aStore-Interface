@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <title>Store</title>
-  </head>
-  <body>
-    <div class="main-container">
-      <div id="login">
-        <div class="teste">
-            <p class="login"><a href="#" class="login">Acesse sua conta</a> ou <a href="#" class="login">Cadastre-se</a></p>
-        </div>
-        
-      </div>
-      <div class="search">
-        <input id="search" name="search" type="text" />
-        <input type="submit" value="BUSCAR" />
-      </div>
-      <div id="head">
-        <ul>
-        <li><a href="#">Página Inicial</a></li>
-        <li><a href="#">Camisetas</a></li>
-        <li><a href="#">Calças</a></li>
-        <li><a href="#">Sapatos</a></li>
-        <li><a href="#">Contato</a></li>
-        </ul>
-      </div>
-      <div class="category">
-        <div class="filters">
-          <h3>FILTRE POR</h3>
-          <h4>CATEGORIAS</h4>
-          <ul class="category-filters">
-            <li><a href="#">Roupas</a></li>
-            <li><a href="#">Sapatos</a></li>
-            <li><a href="#">Acessórios</a></li>
-          </ul>
-          <h3>CORES</h3>
-          <ul id="category-color">
-            <li class="color-one"><a href="#">red</a></li>
-            <li class="color-two"><a href="#">orange</a></li>
-            <li class="color-three"><a href="#">green</a></li>
-          </ul>
-          <h4>TIPO</h4>
-          <ul class="type-filters">
-            <li><a href="#">Corria</a></li>
-            <li><a href="#">Caminhada</a></li>
-            <li><a href="#">Casual</a></li>
-            <li><a href="#">Social</a></li>
-          </ul>
-        </div>
-        <div class="products">
+</head>
 
-        </div>
+<body>
+    
+      <header>
+        <div class="header-section-1">
+              <p class="login">
+                  <a href="#" >Acesse sua conta</a> ou
+                  <a href="#" >Cadastre-se</a>
+              </p> 
       </div>
-    </div>
-  </body>
+      <div class="header-section-2">
+        <h1>WEBJUMP!</h1>
+        <div class="search">
+          <input  name="search" type="text"/>
+          <!-- <input type="submit" value="BUSCAR" /> -->
+          <button type="button">BUSCAR</button>
+      </div>
+      </div>
+      
+      <div id="head">
+          <ul>
+              <li><a href="#">Página Inicial</a></li>
+              <li><a href="#">Camisetas</a></li>
+              <li><a href="#">Calças</a></li>
+              <li><a href="#">Sapatos</a></li>
+              <li><a href="#">Contato</a></li>
+          </ul>
+      </div>
+      </header>
+        
+        <div id="father-category">
+            <div class="category">
+                <div id="father-filters">
+                    <div class="filters">
+                        <h3 id="h3filter">FILTRE POR</h3>
+                        <h4 id="h4filter">CATEGORIAS</h4>
+                        <ul class="category-filters">
+                            <li><a href="#">Roupas</a></li>
+                            <li><a href="#">Sapatos</a></li>
+                            <li><a href="#">Acessórios</a></li>
+                        </ul>
+                        <h3>CORES</h3>
+                        <ul id="category-color">
+                            <li class="category color-one"><a href="#"></a></li>
+                            <li class="category color-two"><a href="#"></a></li>
+                            <li class="category color-three"><a href="#"></a></li>
+                        </ul>
+                        <h4 id="h4type">TIPO</h4>
+                        <ul class="type-filters">
+                            <li><a href="#">Corrida</a></li>
+                            <li><a href="#">Caminhada</a></li>
+                            <li><a href="#">Casual</a></li>
+                            <li><a href="#">Social</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="products">
+                    <h2>Sapatos</h2>
+                    <p>ORDENAR POR</p>
+                    <select name="filter">
+                        <option value="Preço">Preço</option>
+                        <option value="Mais vendido">Mais vendido</option>
+                        <option value="Melhor avaliação">Melhor avaliação</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    
+</body>
+
 </html>

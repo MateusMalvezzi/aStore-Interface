@@ -5,26 +5,59 @@
     font-family: Open+Sans,sans-serif;
 }
 
-#login{
-    background-color: black;
-    
-}
-.login{
-    color: white;
-    text-align: right;
-}
-.teste{
-    margin-right: 100px;
-}
-.main-container{
+body{
     width: 100%;
+}
+
+.login{
+    background-color: #231F20;
+    color: white;
+    width: 100%;
+    height:31px;
+}
+
+
+.login a {
+    color: white;
+}
+
+.header-section-1{
+    text-align: end;
     
 }
+
+
+
+.header-section-2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+    
+}
+
+.search button{
+    width: 110px;
+    height: 44px;
+    opacity: 1;
+    background: #00A8A9;
+    letter-spacing: -0.8px;
+color: #FFFFFF;
+}
+
+.search input {
+    width: 414px;
+    height: 44px;
+}
+
+
 
 #head{
     background-color: #CB0D1F;
     height: 54px;
 }
+
 #head ul{
     padding:15px 290px;
 	margin:0px;
@@ -43,4 +76,67 @@
 #head ul li a:hover{
     color: #fffb;
     text-decoration:underline;
+}
+#father-filters{
+    top: 268px;
+    left: 101px;
+    width: 261px;
+    height: 474px;
+    border:1px solid #E2DEDC;
+    opacity: 1;
+}
+
+#h3filter{
+    top: 281px;
+    left: 118px;
+    width: 134px;
+    height: 33px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #ED1A39;
+    opacity: 1;
+}
+#h4filter{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #626262;
+    opacity: 1;
+    margin-bottom: 12px;
+}
+
+
+#category-color{
+    display:flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+.color-one{
+    background-color: #CB0D1F;
+    margin-bottom: 12px;
+    margin-right:3px;
+}
+.color-two{
+    background-color: #F26324;
+    margin-right:3px;
+}
+.color-three{
+    background-color: #27A3A9;
+}
+.category {
+    width: 48px;
+    height: 24px;
+    opacity: 1;
+    list-style-type: none; 
+}
+#h4type{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #1E2B50;
+    opacity: 1;
+}
+.type-filters{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #626262;
+    opacity: 1;
 }

@@ -179,7 +179,22 @@ body{
     font-size: 32px;
     font-family: open sans;
 }
-
+.side-left{
+    display:flex;
+    justify-content: flex-end;
+    margin-right:99px;
+}
+.side-left p{
+    margin-right:14px;
+    color:#808185;
+    font-size:13px;
+    padding: 4px 0px 0px 0px;
+}
+.side-left select{
+    width: 216px;
+    height: 27px;
+    border-radius: 5px;
+}
 .line{
     border: 10px solid #00ff37;
 }

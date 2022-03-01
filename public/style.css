@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,800;1,400&display=swap');
 *{
     margin: 0;
-    padding: 0;
-    
+    padding: 0;   
 }
 
 body{
@@ -195,8 +194,37 @@ body{
     height: 27px;
     border-radius: 5px;
 }
+.line-father{
+    border: 10px solid #030303;
+    width: 1420px;
+    height: 395px;
+    display:flex;
+}
 .line{
-    border: 10px solid #00ff37;
+    border: 10px solid #00ca7d;
+    width: 212px;
+    height: 233px;
+}
+.one{
+    margin-right: 140px;
+}
+.two{
+    margin-right: 140px;
+}
+.three{
+    margin-right: 125px;
+}
+img{
+    width:100px;
+    height: 100px;
+}
+.buy{
+    width: 210px;
+    height: 40px;
+    top: 713px;
+    border-radius: 5px;
+    border:none;
+    background-color:#00A8A9;
 }
 
 footer{

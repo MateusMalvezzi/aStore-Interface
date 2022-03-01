@@ -168,7 +168,6 @@ body{
 
 #products{
     margin: 69px 0px 86px 0px;
-    background-color: #f8e911;
     width: 1442px;
     height: 1144px;
 }
@@ -195,37 +194,53 @@ body{
     border-radius: 5px;
 }
 .line-father{
-    border: 10px solid #030303;
     width: 1420px;
     height: 395px;
-    display:flex;
 }
 .line{
-    border: 10px solid #00ca7d;
     width: 212px;
     height: 233px;
+    display: flex;
+    margin-left: 20px;
 }
-.one{
-    margin-right: 140px;
+
+.line img{
+    width:196px;
+    height: 215px;
+    margin-left:auto;
+    margin-right: auto;
+    padding-right: 80px; 
 }
-.two{
-    margin-right: 140px;
+.line h3{
+    color:#626262;
+    font-size: 16px;
+    margin-bottom: 5px;
+    padding-right: 80px; 
+    text-align: center;
 }
-.three{
-    margin-right: 125px;
-}
-img{
-    width:100px;
-    height: 100px;
+.line p{
+    font-size: 21px;
+    color: #1E2B50;
+    margin-bottom: 5px;
+    padding-right: 80px; 
+    text-align: center;
 }
 .buy{
-    width: 210px;
+    display:flex;
+    margin-left: 20px;
+    margin-top: 50px;
+
+}
+.buy button{
+    margin-right: 80px;
+    width: 195px;
     height: 40px;
-    top: 713px;
     border-radius: 5px;
     border:none;
+    cursor: pointer;
     background-color:#00A8A9;
 }
+
 
 footer{
     margin:0px 99px 9px 101px;

@@ -2,11 +2,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Open+Sans,sans-serif;
+    
 }
 
 body{
     width: 100%;
+    font-family: "Open Sans", sans-serif;
 }
 
 .header-section-1{
@@ -87,6 +88,13 @@ body{
 }
 .category{
     display:flex;
+}
+.filters ul li{
+    list-style:none;
+}
+.filters ul li a{
+    text-decoration:none;
+    color:#626262;
 }
 #father-filters{
     margin: 69px 0px 867px 100px;
@@ -172,12 +180,12 @@ body{
     font-family: open sans;
 }
 
-
+.line{
+    border: 10px solid #00ff37;
+}
 
 footer{
-    margin-left:101px;
-    margin-right:99px;
-    margin-bottom: 9px;
+    margin:0px 99px 9px 101px;
     height: 176px;
     background-color:#CB0D1F;
 }

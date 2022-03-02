@@ -12,7 +12,8 @@ function createCard(product) {
     pPrice = document.createElement('p');
    
 
-    img.innerHTML = product.image;
+
+    img.src = product.image;
     pName.innerHTML = product.name;
     pPrice.innerHTML = product.price;
 
@@ -38,13 +39,28 @@ function createButton(){
     return container;
 }
 
+class productList extends HTMLElement {
+    connectedCallback() {
+      this.innerHTML = `       
+      <div class="shoes">
+      <div class="line-father">
+          <div class="line" id="card-component"></div>
+          <div  class="buy" id="button"></div>
+      </div>
+      </div>       
+      `;
+    }
+  }
+
 function main() {
     let data = get("http://localhost:8888/api/V1/categories/3");
     let product = JSON.parse(data);
-    let component = document.getElementById("card-component")
+    let component = document.getElementById('card-component')
     let button2 = document.getElementById("button");
-    const sliced = product.items.slice(0, 4);
-      
+    const sliced = product.items.slice(0, 5);
+    
+    console.log(component);
+    console.log(button2);
 
     //Para cada produto --> Criar um card --> Adicionar no component pai
     sliced.map(element => {
@@ -55,5 +71,9 @@ function main() {
         
     });
 }
+
+
+
+  customElements.define('product-list', productList);
 
 main();

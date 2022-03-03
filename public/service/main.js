@@ -26,6 +26,20 @@ function createCard(product) {
 
 }
 
+function createList() {
+    a = document.createElement('a')
+    p = document.createElement('p')
+    
+
+    a = list.id;
+    a.href = list.path;
+    p = list.name;
+
+    a.appendChild(p);
+
+    return a;
+}
+
 function createButton(){
     container = document.createElement('div')
     button = document.createElement('button');
@@ -52,15 +66,25 @@ class productList extends HTMLElement {
     }
   }
 
+
+
+
+
 function main() {
-    let data = get("http://localhost:8888/api/V1/categories/3");
-    let product = JSON.parse(data);
+    let dataProduct = get("http://localhost:8888/api/V1/categories/3");
+    let product = JSON.parse(dataProduct);
+
+    let dataList = get("http://localhost:8888/api/V1/categories/list")
+    let list = JSON.parse(dataList);
+    console.log(list);
+
+    
     let component = document.getElementById('card-component')
     let button2 = document.getElementById("button");
+    let link2 = document.getElementById("link");
     const sliced = product.items.slice(0, 5);
     
-    console.log(component);
-    console.log(button2);
+
 
     //Para cada produto --> Criar um card --> Adicionar no component pai
     sliced.map(element => {
@@ -70,6 +94,11 @@ function main() {
         button2.appendChild(button);
         
     });
+
+    list.map(item => {
+        let link = createList(item);
+        link2.appendChild(link);
+    })
 }
 
 

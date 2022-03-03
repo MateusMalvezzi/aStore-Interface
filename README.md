@@ -26,13 +26,13 @@
 
 
  ## Demonstration
-  <div align='center'><img src="" alt="Demo" width="800"/></div>
+  <div align='center'><img src="demo.gif" alt="Demo" width="800"/></div>
     
     
 
 ## :computer: Live Preview
 
-You can access this website demo version at the following link [Demo Version]()
+You can access this website demo version at the following link [Demo Version](https://a-store-interface-mateusmalvezzi.vercel.app/index.html)
 
 ## :page_with_curl: About <br>
 EN <br> This application demonstrates the interface of a clothing store.
